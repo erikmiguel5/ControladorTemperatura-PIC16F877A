@@ -4,6 +4,8 @@ Controlador de temperatura utilizando o PIC16F877A e a placa MacLab2
 O presente trabalho foi realizado para a disciplina de microprocessadores e microcontroladores,
 para sua implementação foi utilizado o mplab e o picsimlab, como ambientes de desenvolvimento e teste.
 
+Para dúvidas e sugestões segue o meu email: miguelerik5@gmail.com
+
 
 Especificações:
 
