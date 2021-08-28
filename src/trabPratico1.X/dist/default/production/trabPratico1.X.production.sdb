@@ -1,0 +1,544 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X/function.h
+[v _verificarTemperatura verificarTemperatura `(i  1 e 2 0 ]
+"18
+[v _imprimirTemp imprimirTemp `(v  1 e 1 0 ]
+"31
+[v _armazenarSet armazenarSet `(v  1 e 1 0 ]
+"37
+[v _telaInicio telaInicio `(i  1 e 2 0 ]
+"64
+[v _alterarSetPoint alterarSetPoint `(v  1 e 1 0 ]
+"76
+[v _telaSetPoint telaSetPoint `(v  1 e 1 0 ]
+"121
+[v _telaGravarEEPROM telaGravarEEPROM `(i  1 e 2 0 ]
+"176
+[v _iniciarControlador iniciarControlador `(i  1 e 2 0 ]
+"224
+[v _telaControlador telaControlador `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"19 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\itoa.c
+[v _itoa itoa `(v  1 e 1 0 ]
+"24 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\lcd.c
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+"29
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+"40
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+"51
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"70
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+"34 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"43 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\serial.c
+[v _serial_tx serial_tx `(v  1 e 1 0 ]
+[s S656 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+"99 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[s S664 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[s S668 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S672 . 1 `S656 1 . 1 0 `S664 1 . 1 0 `S668 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES672  1 e 1 @3 ]
+[s S102 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S111 . 1 `S102 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES111  1 e 1 @6 ]
+[s S242 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S251 . 1 `S242 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES251  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S434 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+"414
+[u S438 . 1 `S434 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES438  1 e 1 @9 ]
+[s S693 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S702 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S707 . 1 `S693 1 . 1 0 `S702 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES707  1 e 1 @11 ]
+[s S549 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S558 . 1 `S549 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES558  1 e 1 @12 ]
+"737
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"892
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"906
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+[s S502 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"994
+[s S511 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S515 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S518 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S521 . 1 `S502 1 . 1 0 `S511 1 . 1 0 `S515 1 . 1 0 `S518 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES521  1 e 1 @24 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+[s S22 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1190
+[s S28 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S36 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S39 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S42 . 1 `S22 1 . 1 0 `S28 1 . 1 0 `S36 1 . 1 0 `S39 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES42  1 e 1 @31 ]
+[s S203 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1340
+[u S210 . 1 `S203 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES210  1 e 1 @133 ]
+[s S182 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S191 . 1 `S182 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES191  1 e 1 @134 ]
+[s S161 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S170 . 1 `S161 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES170  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S221 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1578
+[u S230 . 1 `S221 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES230  1 e 1 @137 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+[s S465 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2025
+[s S474 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S478 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S481 . 1 `S465 1 . 1 0 `S474 1 . 1 0 `S478 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES481  1 e 1 @152 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+[s S135 . 1 `uc 1 CM 1 0 :3:0 
+`uc 1 CIS 1 0 :1:3 
+`uc 1 C1INV 1 0 :1:4 
+`uc 1 C2INV 1 0 :1:5 
+`uc 1 C1OUT 1 0 :1:6 
+`uc 1 C2OUT 1 0 :1:7 
+]
+"2107
+[s S142 . 1 `uc 1 CM0 1 0 :1:0 
+`uc 1 CM1 1 0 :1:1 
+`uc 1 CM2 1 0 :1:2 
+]
+[u S146 . 1 `S135 1 . 1 0 `S142 1 . 1 0 ]
+[v _CMCONbits CMCONbits `VES146  1 e 1 @156 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+[s S267 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2248
+[s S272 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+]
+[u S277 . 1 `S267 1 . 1 0 `S272 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES277  1 e 1 @159 ]
+"2288
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2295
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2316
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+[s S613 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2331
+[u S620 . 1 `S613 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES620  1 e 1 @396 ]
+"2361
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2452
+[v _CCP1X CCP1X `VEb  1 e 0 @189 ]
+"2455
+[v _CCP1Y CCP1Y `VEb  1 e 0 @188 ]
+"2677
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2680
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2707
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"2902
+[v _TMR2ON TMR2ON `VEb  1 e 0 @146 ]
+"17 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\main.c
+[v _setPoint setPoint `ui  1 e 2 0 ]
+"20
+[v _pi pi `l  1 e 4 0 ]
+"21
+[v _dezena dezena `i  1 e 2 0 ]
+"22
+[v _unidade unidade `i  1 e 2 0 ]
+"34
+[v _main main `(v  1 e 1 0 ]
+{
+"35
+[v main@flag flag `ui  1 a 2 56 ]
+"36
+[v main@setU setU `ui  1 a 2 54 ]
+"138
+} 0
+"76 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X/function.h
+[v _telaSetPoint telaSetPoint `(v  1 e 1 0 ]
+{
+"78
+[v telaSetPoint@contU contU `i  1 a 2 4 ]
+"77
+[v telaSetPoint@contD contD `i  1 a 2 2 ]
+"79
+[v telaSetPoint@flag flag `i  1 a 2 0 ]
+"119
+} 0
+"37
+[v _telaInicio telaInicio `(i  1 e 2 0 ]
+{
+"38
+[v telaInicio@flag flag `i  1 a 2 22 ]
+"62
+} 0
+"18
+[v _imprimirTemp imprimirTemp `(v  1 e 1 0 ]
+{
+"19
+[v imprimirTemp@str str `[6]uc  1 a 6 11 ]
+"18
+[v imprimirTemp@temp temp `i  1 p 2 4 ]
+[v imprimirTemp@linha linha `i  1 p 2 6 ]
+"30
+} 0
+"121
+[v _telaGravarEEPROM telaGravarEEPROM `(i  1 e 2 0 ]
+{
+"124
+[v telaGravarEEPROM@flag flag `i  1 a 2 7 ]
+"123
+[v telaGravarEEPROM@contU contU `i  1 a 2 5 ]
+"122
+[v telaGravarEEPROM@contD contD `i  1 a 2 3 ]
+"174
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 0 ]
+[v eeprom_write@addr addr `uc  1 a 1 2 ]
+"9
+} 0
+"64 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X/function.h
+[v _alterarSetPoint alterarSetPoint `(v  1 e 1 0 ]
+{
+"74
+} 0
+"31
+[v _armazenarSet armazenarSet `(v  1 e 1 0 ]
+{
+"35
+} 0
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"9
+[v eeprom_read@addr addr `uc  1 a 1 1 ]
+"19
+} 0
+"224 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X/function.h
+[v _telaControlador telaControlador `(i  1 e 2 0 ]
+{
+"227
+[v telaControlador@strDC strDC `[6]uc  1 a 6 46 ]
+"226
+[v telaControlador@str str `[6]uc  1 a 6 34 ]
+"229
+[v telaControlador@dc dc `l  1 a 4 40 ]
+"228
+[v telaControlador@temp temp `i  1 a 2 44 ]
+"266
+} 0
+"70 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\lcd.c
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+{
+[v lcd_str@str str `*.24DCuc  1 a 1 wreg ]
+"72
+[v lcd_str@i i `uc  1 a 1 5 ]
+"70
+[v lcd_str@str str `*.24DCuc  1 a 1 wreg ]
+"72
+[v lcd_str@str str `*.24DCuc  1 a 1 6 ]
+"79
+} 0
+"40
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+{
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+"42
+[v lcd_dat@val val `uc  1 a 1 3 ]
+"49
+} 0
+"19 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\itoa.c
+[v _itoa itoa `(v  1 e 1 0 ]
+{
+[v itoa@val val `ui  1 p 2 0 ]
+[v itoa@str str `*.4uc  1 p 1 2 ]
+"27
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
+"176 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X/function.h
+[v _iniciarControlador iniciarControlador `(i  1 e 2 0 ]
+{
+"182
+[v iniciarControlador@dutyCycle dutyCycle `l  1 a 4 25 ]
+"181
+[v iniciarControlador@num_dac num_dac `l  1 a 4 21 ]
+"178
+[v iniciarControlador@erro erro `i  1 a 2 19 ]
+"177
+[v iniciarControlador@tempAtual tempAtual `i  1 a 2 17 ]
+"222
+} 0
+"5
+[v _verificarTemperatura verificarTemperatura `(i  1 e 2 0 ]
+{
+"6
+[v verificarTemperatura@temp temp `ui  1 a 2 10 ]
+"12
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 3 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 2 ]
+[v ___aldiv@counter counter `uc  1 a 1 1 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 6 ]
+[v ___aldiv@dividend dividend `l  1 p 4 10 ]
+"41
+} 0
+"51 C:\Users\migue\Desktop\ufop\20.2\micro\modulo3\trabPratico1.X\lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"68
+} 0
+"29
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+{
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+"31
+[v lcd_cmd@val val `uc  1 a 1 3 ]
+"38
+} 0
+"24
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+{
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+"26
+[v lcd_wr@val val `uc  1 a 1 0 ]
+"27
+} 0
