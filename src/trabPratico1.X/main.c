@@ -32,7 +32,7 @@ int unidade;
 
 
 void main(void) {
-    unsigned int flag = -1;
+    unsigned int flag = 0;
     unsigned int setU = setPoint%10;
     unsigned int setD = (setPoint-setU)/10;
     
@@ -47,11 +47,11 @@ void main(void) {
     TRISCbits.TRISC2 = 0; //RX
     TRISCbits.TRISC6 = 0; //TX
     
-    /*Botıes RB*/
+    /*Bot√µes RB*/
     TRISBbits.TRISB1 = 1;
     TRISBbits.TRISB2 = 1;
     
-    /*Entrada sinal analÛdico temp*/
+    /*Entrada sinal anal√≥dico temp*/
     TRISAbits.TRISA1 = 0;
     TRISAbits.TRISA0 = 1;
     
@@ -118,7 +118,7 @@ void main(void) {
     while (1) {
         while(RB1 == 1 && RB2 == 1);
 
-       if(flag == -1){
+       if(eeprom_read(0x0A)-0x30 < 0 || eeprom_read(0x0A)-0x30 > 9){
             flag = telaGravarEEPROM();
         }       
         
